@@ -1,0 +1,13 @@
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\BGChanger.deps.json
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\BGChanger.runtimeconfig.json
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\BGChanger.runtimeconfig.dev.json
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\BGChanger.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\BGChanger.pdb
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\System.Windows.Forms.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.csprojAssemblyReference.cache
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.csproj.CoreCompileInputs.cache
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.AssemblyInfoInputs.cache
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.AssemblyInfo.cs
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.csproj.CopyComplete
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\BGChanger.pdb

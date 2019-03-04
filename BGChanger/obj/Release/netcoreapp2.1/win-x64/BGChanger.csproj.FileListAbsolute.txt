@@ -1,0 +1,16 @@
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\hostpolicy.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\hostfxr.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\BGChanger.exe
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\BGChanger.deps.json
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\BGChanger.runtimeconfig.json
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\BGChanger.runtimeconfig.dev.json
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\BGChanger.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\BGChanger.pdb
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\bin\Release\netcoreapp2.1\win-x64\System.Windows.Forms.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.csprojAssemblyReference.cache
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.csproj.CoreCompileInputs.cache
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.AssemblyInfoInputs.cache
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.AssemblyInfo.cs
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.csproj.CopyComplete
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.dll
+C:\Users\crud4\Documents\Visual Studio 2017\Projects\BGChanger\BGChanger\obj\Release\netcoreapp2.1\win-x64\BGChanger.pdb
