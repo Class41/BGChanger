@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -25,6 +26,8 @@ namespace BGChanger
         [DllImport("user32.dll")]
         static extern int GetWindowText(IntPtr hWnd, StringBuilder text, int count);
 
+        public static List<string> _triggers;
+
 
         private const int SPI_SETDESKWALLPAPER = 0x14;
         private const int SPIF_UPDATEINIFILE = 0x1;
@@ -35,6 +38,53 @@ namespace BGChanger
 
         private static void BgHandler()
         {
+            if (!System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory() + "\\source.jpg"))
+            {
+                MessageBox.Show("Source image (your normal image) does not exist: " + System.IO.Directory.GetCurrentDirectory() + "\\source.jpg",
+                   "Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+
+                Environment.Exit(-1);
+            }
+
+            if (!System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory() + "\\other.jpg"))
+            {
+                MessageBox.Show("Other image (your swap image) does not exist: " + System.IO.Directory.GetCurrentDirectory() + "\\other.jpg",
+                   "Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+
+                Environment.Exit(-1);
+            }
+
+            try
+            {
+                if (!System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory() + "\\triggers.cfg"))
+                {
+                    System.IO.File.Create(System.IO.Directory.GetCurrentDirectory() + "\\triggers.cfg");
+
+                    MessageBox.Show("Triggers file created. Please put the titles of applications in that file. One per line. (Case sensitive)" + System.IO.Directory.GetCurrentDirectory() + "\\triggers.cfg",
+                   "Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+
+                    Environment.Exit(-1);
+                }
+
+                _triggers = new List<string>(System.IO.File.ReadAllLines(System.IO.Directory.GetCurrentDirectory() + "\\triggers.cfg"));
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Could not load triggers file. Aborting: " + System.IO.Directory.GetCurrentDirectory() + "\\triggers.cfg",
+                   "Error", MessageBoxButtons.OK,
+                   MessageBoxIcon.Exclamation);
+
+                Environment.Exit(-1);
+            }
+            AppDomain.CurrentDomain.ProcessExit += (s, ev) =>
+            {
+                DisplayPicture(System.IO.Directory.GetCurrentDirectory() + "\\source.jpg", true);
+            };
+
             ShowWindow(GetConsoleWindow(), SW_HIDE);
 
             while (true)
@@ -48,10 +98,21 @@ namespace BGChanger
 
         private static void CheckActive()
         {
-            if (GetActiveWindowTitle() == "Program Manager")
-                DisplayPicture(System.IO.Directory.GetCurrentDirectory() + "\\source.jpg", true);
-            else
+
+            if (_triggers.Count == 0)
+            {
+                MessageBox.Show("Trigger file empty. Please list window title entries in the file. One per line. " + System.IO.Directory.GetCurrentDirectory() + "\\triggers.cfg",
+                "Error", MessageBoxButtons.OK,
+                 MessageBoxIcon.Exclamation);
+
+                Environment.Exit(-1);
+            }
+
+            if (_triggers.Contains(GetActiveWindowTitle()))
                 DisplayPicture(System.IO.Directory.GetCurrentDirectory() + "\\other.jpg", true);
+            else
+                DisplayPicture(System.IO.Directory.GetCurrentDirectory() + "\\source.jpg", true);
+
         }
 
         private static void DisplayPicture(string file_name, bool update_registry)
